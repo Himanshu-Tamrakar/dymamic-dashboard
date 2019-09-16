@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="flex-grid">
+    <aside class="col sidebar">
+
+      <div class="example-box" cdkDrag>
+        Drag me around
+      </div>
+
+    </aside>
+    <section class="col main">
+
+      <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>{{timePeriod}}</div>
+      </div>
+
+    </section>
+  </div>
+</div>
