@@ -1,0 +1,15 @@
+<div
+  cdkDropList
+  id="canvasRef"
+  class="canvas"
+  #todoList="cdkDropList"
+  [cdkDropListData]="canvasItems"
+  (cdkDropListDropped)="drop($event)">
+  <div
+    *ngFor="let item of canvasItems; let i = index"
+    cdkDrag>
+    <mat-card >
+      <div> {{item | json}} </div>
+    </mat-card>
+  </div>
+</div>

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DesignerComponent } from './designer.component';
 import { LayoutComponent } from './component/layout/layout.component';
 import { HomeComponent } from './component/home/home.component';
+import { MainContentComponent } from './component/main-content/main-content.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,10 @@ const routes: Routes = [
     {
       path: "home", component: HomeComponent
     },
-    { path: "", redirectTo: "home", pathMatch: "full" }]
+    {
+      path: "main-content", component: MainContentComponent
+    },
+    { path: "", redirectTo: "main-content", pathMatch: "full" }]
   },
   // { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];

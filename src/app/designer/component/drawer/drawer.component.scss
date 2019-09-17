@@ -1,0 +1,18 @@
+mat-card {
+  background: rebeccapurple;
+  margin: 6px;
+  min-width: 90px;
+}
+.palette {
+  min-height: 600px;
+  background: lightblue;
+}
+.drag-item {
+  height: 45px;
+  width: 45px;
+  background: lightcoral;
+  border-radius: 50%;
+  top: 6px;
+  right: 6px;
+  position: absolute;
+}

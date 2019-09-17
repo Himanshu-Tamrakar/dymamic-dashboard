@@ -21,7 +21,8 @@ const materialComponents = [
   MatCardModule,
   MatCheckboxModule,
   MatTooltipModule,
-  MatMenuModule, MatSidenavModule
+  MatMenuModule,
+  MatSidenavModule,
 ];
 
 @NgModule({

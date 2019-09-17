@@ -1,0 +1,35 @@
+<div
+  cdkDropList
+  id="paletteRef"
+  [cdkDropListData]="paletteItems"
+  [cdkDropListConnectedTo]="['canvasRef']"
+  class="palette"
+  (cdkDropListDropped)="drop($event)">
+
+    <mat-card *ngFor="let item of paletteItems; let i = index"
+    [cdkDragData]="item"
+    cdkDrag
+    cdkDragLockAxis="y">
+
+      <div class="row">
+        <mat-icon cdkDragHandle>unfold_more</mat-icon>
+
+        <div
+          class="drag-item-container"
+          cdkDropList
+          [cdkDropListData]="[item]"
+          [cdkDropListConnectedTo]="['canvasRef']">
+          {{item.count}} remaining
+          <div
+            *ngFor="let count of item.count | numberToIterable; let j = index"
+            [ngClass]="['drag-item', 'drag-item-'+ j]"
+            cdkDrag
+            [cdkDragData]="item">
+            {{ item.label }} {{ index }}
+          </div>
+
+        </div>
+      </div>
+
+    </mat-card>
+</div>
