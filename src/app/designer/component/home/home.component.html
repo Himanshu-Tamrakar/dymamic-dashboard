@@ -1,17 +1,35 @@
-
 <div class="container">
-  <div class="flex-grid">
+  <div class="flex-grid" cdkDropListGroup>
     <aside class="col sidebar">
 
-      <div class="example-box" cdkDrag>
-        Drag me around
+      <div fxLayout="column" cdkDropListSortingDisabled fxLayoutGap="0%" cdkDropList [cdkDropListData]="sideOption" class="example-list" (cdkDropListDropped)="drop($event)">
+        <div fxFlex="25%" class="example-box" *ngFor="let item of sideOption" cdkDrag>{{item}}</div>
       </div>
 
     </aside>
     <section class="col main">
 
-      <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
-        <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>{{timePeriod}}</div>
+      <div >
+        <div class="example-container">
+          <div fxLayout="row" fxLayoutGap="0%" cdkDropListOrientation="horizontal" cdkDropList [cdkDropListData]="todo" class="example-list" (cdkDropListDropped)="drop($event)">
+            <div fxFlex="25%" class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+          </div>
+        </div>
+
+        <!-- <div class="example-container">
+          <div cdkDropListOrientation="horizontal" cdkDropList [cdkDropListData]="done" class="example-list" (cdkDropListDropped)="drop($event)">
+            <div fxFlex="25%" class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+          </div>
+        </div>
+
+
+        <div class="example-container">
+          <div cdkDropListOrientation="horizontal" cdkDropList [cdkDropListData]="prodDone" class="example-list" (cdkDropListDropped)="drop($event)">
+            <div fxFlex="25%" class="example-box" *ngFor="let item of prodDone" cdkDrag>{{item}}</div>
+          </div>
+        </div> -->
+
+
       </div>
 
     </section>
