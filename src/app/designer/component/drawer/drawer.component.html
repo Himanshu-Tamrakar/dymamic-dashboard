@@ -20,13 +20,19 @@
           [cdkDropListData]="[item]"
           [cdkDropListConnectedTo]="['canvasRef']">
           {{item.count}} remaining
-          <div
+
+          <div cdkDrag [cdkDragData]="item" >
+            DRAG
+          </div>
+
+
+          <!-- <div
             *ngFor="let count of item.count | numberToIterable; let j = index"
             [ngClass]="['drag-item', 'drag-item-'+ j]"
             cdkDrag
             [cdkDragData]="item">
             {{ item.label }} {{ index }}
-          </div>
+          </div> -->
 
         </div>
       </div>

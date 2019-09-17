@@ -23,6 +23,7 @@ export class DrawerComponent implements OnInit {
 
 
   drop(event) {
+    debugger
     this.dropZones.moveInList(event);
   }
 

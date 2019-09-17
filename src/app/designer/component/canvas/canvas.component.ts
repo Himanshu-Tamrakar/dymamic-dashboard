@@ -18,7 +18,7 @@ export class CanvasComponent implements OnInit {
   }
 
   drop(event: CdkDragDrop<any[]>) {
-
+    debugger
     // if drop event is from an item that was already on canvas
     if (event.container === event.previousContainer) {
       // sort it based on where it was dropped
