@@ -24,7 +24,9 @@ export class DrawerComponent implements OnInit {
 
   drop(event) {
     debugger
-    this.dropZones.moveInList(event);
+    // this.dropZones.moveInList(event);
   }
 
+
+  sideOption = ['H', 'H', 'S', 'Y']
 }

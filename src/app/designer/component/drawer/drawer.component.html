@@ -1,4 +1,20 @@
-<div
+<div fxLayout="column" fxLayoutGap="0%"
+cdkDropList
+[cdkDropListData]="sideOption"
+[cdkDropListConnectedTo]="['canvasRef', 'canvasRef1', 'canvasRef2']"
+(cdkDropListDropped)="drop($event)"
+cdkDropListSortingDisabled
+class="example-list">
+
+  <div fxFlex="25%" class="example-box"
+  *ngFor="let item of sideOption"
+  [cdkDragData]="item"
+  cdkDrag>
+    {{item}}
+</div>
+</div>
+
+<!-- <div
   cdkDropList
   id="paletteRef"
   [cdkDropListData]="paletteItems"
@@ -21,21 +37,21 @@
           [cdkDropListConnectedTo]="['canvasRef']">
           {{item.count}} remaining
 
-          <div cdkDrag [cdkDragData]="item" >
-            DRAG
-          </div>
+    <div cdkDrag [cdkDragData]="item">
+      DRAG
+    </div>
 
 
-          <!-- <div
+    <div
             *ngFor="let count of item.count | numberToIterable; let j = index"
             [ngClass]="['drag-item', 'drag-item-'+ j]"
             cdkDrag
             [cdkDragData]="item">
             {{ item.label }} {{ index }}
-          </div> -->
+          </div>
 
-        </div>
-      </div>
-
-    </mat-card>
+  </div>
 </div>
+
+</mat-card>
+</div> -->
