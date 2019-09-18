@@ -29,7 +29,7 @@ export class DrawerComponent implements OnInit {
 
   sideOption = [{
     id: '',
-    name: 'Himanshu',
+    name: 'Apple',
     fxFlex: "40%",
     colStyle: [{ height: '40%' }],
     component: {
@@ -39,7 +39,7 @@ export class DrawerComponent implements OnInit {
     }
   }, {
     id: '',
-    name: 'Harbu',
+    name: 'Green Apple',
     fxFlex: "25%",
     colStyle: [{ height: '40%' }],
     component: {
@@ -49,7 +49,47 @@ export class DrawerComponent implements OnInit {
     }
   }, {
     id: '',
-    name: 'Shetty',
+    name: 'Banana',
+    fxFlex: "25%",
+    colStyle: [{ height: '40%' }],
+    component: {
+      id: 'COM002',
+      type: 'DATATABLE',
+      name: 'datatable'
+    }
+  },{
+    id: '',
+    name: 'Mango',
+    fxFlex: "25%",
+    colStyle: [{ height: '40%' }],
+    component: {
+      id: 'COM002',
+      type: 'DATATABLE',
+      name: 'datatable'
+    }
+  },{
+    id: '',
+    name: 'Papaya',
+    fxFlex: "25%",
+    colStyle: [{ height: '40%' }],
+    component: {
+      id: 'COM002',
+      type: 'DATATABLE',
+      name: 'datatable'
+    }
+  },{
+    id: '',
+    name: 'Graps',
+    fxFlex: "25%",
+    colStyle: [{ height: '40%' }],
+    component: {
+      id: 'COM002',
+      type: 'DATATABLE',
+      name: 'datatable'
+    }
+  },{
+    id: '',
+    name: 'Pineapple',
     fxFlex: "25%",
     colStyle: [{ height: '40%' }],
     component: {
