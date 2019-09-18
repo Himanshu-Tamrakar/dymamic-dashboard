@@ -13,11 +13,13 @@ import { HomeComponent } from './component/home/home.component';
 import { DrawerComponent } from './component/drawer/drawer.component';
 import { CanvasComponent } from './component/canvas/canvas.component';
 import { MainContentComponent } from './component/main-content/main-content.component';
+import { SharedDataCompService } from './service/shared-data-comp.service';
+
 
 @NgModule({
   declarations: [DesignerComponent, HomeComponent, DrawerComponent, CanvasComponent, MainContentComponent],
   imports: [
     CommonModule, DesignerRoutingModule, RouterModule, MaterialModule, DragDropModule, FlexLayoutModule
-  ], providers: []
+  ], providers: [SharedDataCompService]
 })
 export class DesignerModule { }
