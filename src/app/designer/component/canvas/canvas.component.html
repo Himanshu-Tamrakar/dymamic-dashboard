@@ -1,10 +1,15 @@
-<div class="container">
-  <div class="flex-grid" cdkDropListGroup>
-    <section class="col main">
 
-      <div >
-        <div class="example-container">
-          <div id="canvasRef" fxLayout="row" fxLayoutGap="0%" cdkDropListOrientation="horizontal" cdkDropList [cdkDropListData]="todo" class="example-list" (cdkDropListDropped)="drop($event)">
+
+      <div cdkDropListGroup >
+        <div class="example-container" *ngFor="let row of configJson.rows; let rowId=index">
+          <div id="canvasRef{{rowId}}"  [fxLayout]="row.fxLayout" [fxLayoutGap]="row.fxLayoutGap" [cdkDropListOrientation]="row.cdkDropListOrientation" cdkDropList [cdkDropListData]="row.columns" class="example-list" (cdkDropListDropped)="drop($event)">
+            <div (click)="itemSelected(rowId, colId)" [fxFlex]="col.fxFlex" class="example-box" *ngFor="let col of row.columns; let colId=index" cdkDrag>{{col.name}}</div>
+          </div>
+        </div>
+
+
+        <!-- <div class="example-container">
+          <div id="canvasRef{{one}}" fxLayout="row" fxLayoutGap="0%" cdkDropListOrientation="horizontal" cdkDropList [cdkDropListData]="todo" class="example-list" (cdkDropListDropped)="drop($event)">
             <div fxFlex="25%" class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
           </div>
         </div>
@@ -20,11 +25,7 @@
           <div id="canvasRef2" cdkDropListOrientation="horizontal" cdkDropList [cdkDropListData]="prodDone" class="example-list" (cdkDropListDropped)="drop($event)">
             <div fxFlex="25%" class="example-box" *ngFor="let item of prodDone" cdkDrag>{{item}}</div>
           </div>
-        </div>
+        </div> -->
 
 
       </div>
-
-    </section>
-  </div>
-</div>

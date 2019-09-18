@@ -28,5 +28,35 @@ export class DrawerComponent implements OnInit {
   }
 
 
-  sideOption = ['Himanshu', 'Harbu', 'Shetty', 'Yadav']
+  sideOption = [{
+    id: '',
+    name: 'Himanshu',
+    fxFlex: "40%",
+    colStyle: [{ height: '40%' }],
+    component: {
+      id: 'COM001',
+      type: 'LINE-CHART',
+      name: 'lineChart'
+    }
+  }, {
+    id: '',
+    name: 'Harbu',
+    fxFlex: "25%",
+    colStyle: [{ height: '40%' }],
+    component: {
+      id: 'COM002',
+      type: 'DATATABLE',
+      name: 'datatable'
+    }
+  }, {
+    id: '',
+    name: 'Shetty',
+    fxFlex: "25%",
+    colStyle: [{ height: '40%' }],
+    component: {
+      id: 'COM002',
+      type: 'DATATABLE',
+      name: 'datatable'
+    }
+  }]
 }

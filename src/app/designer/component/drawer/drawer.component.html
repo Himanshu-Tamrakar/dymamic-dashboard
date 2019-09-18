@@ -1,7 +1,7 @@
 <div fxLayout="column" fxLayoutGap="0%"
 cdkDropList
 [cdkDropListData]="sideOption"
-[cdkDropListConnectedTo]="['canvasRef', 'canvasRef1', 'canvasRef2']"
+[cdkDropListConnectedTo]="['canvasRef0', 'canvasRef1', 'canvasRef2']"
 (cdkDropListDropped)="drop($event)"
 cdkDropListSortingDisabled
 class="example-list">
@@ -10,9 +10,13 @@ class="example-list">
   *ngFor="let item of sideOption"
   [cdkDragData]="item"
   cdkDrag>
-    {{item}}
+    {{item.name}}
 </div>
 </div>
+
+
+
+
 
 <!-- <div
   cdkDropList
