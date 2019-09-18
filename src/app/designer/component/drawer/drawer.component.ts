@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Item } from '../../interface/item';
-import { DropZoneService } from '../../service/drop-zone.service'
+// import { DropZoneService } from '../../service/drop-zone.service'
 
 @Component({
   selector: 'app-drawer',
@@ -16,15 +16,14 @@ export class DrawerComponent implements OnInit {
     { label: 'palette 4', count: 5 }
   ];
 
-  constructor(private dropZones: DropZoneService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
 
   drop(event) {
-    debugger
-    this.dropZones.moveInList(event);
+    // this.dropZones.moveInList(event);
   }
 
 

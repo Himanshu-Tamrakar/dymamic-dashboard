@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CdkDropList, CdkDragDrop, copyArrayItem, transferArrayItem, moveItemInArray } from '@angular/cdk/drag-drop';
-import { DropZoneService } from '../../service/drop-zone.service'
+// import { DropZoneService } from '../../service/drop-zone.service'
 import { Item } from '../../interface/item';
 
 @Component({
@@ -12,7 +12,7 @@ export class CanvasComponent implements OnInit {
 
   canvasItems: Item[] = [];
 
-  constructor(private dropZones: DropZoneService) { }
+  constructor() { }
 
   ngOnInit() {
   }
@@ -78,35 +78,33 @@ export class CanvasComponent implements OnInit {
       }]
     }]
   }
+  //
+  // todo = [
+  //   'Google',
+  //   'Facebook',
+  //   'ISRO',
+  //   'Apple',
+  // ];
+  //
+  // done = [
+  //   'Get up',
+  //   'Brush teeth',
+  //   'Take a shower',
+  //   'Check e-mail',
+  //   // 'Walk dog'
+  // ];
+  //
+  // prodDone = [
+  //   'prod-Get up',
+  //   'prod-Brush teeth',
+  //   'prod-Take a shower',
+  //   'prod-Check e-mail',
+  //   // 'prod-Walk dog'
+  // ];
 
-  todo = [
-    'Google',
-    'Facebook',
-    'ISRO',
-    'Apple',
-  ];
 
-  done = [
-    'Get up',
-    'Brush teeth',
-    'Take a shower',
-    'Check e-mail',
-    // 'Walk dog'
-  ];
-
-  prodDone = [
-    'prod-Get up',
-    'prod-Brush teeth',
-    'prod-Take a shower',
-    'prod-Check e-mail',
-    // 'prod-Walk dog'
-  ];
-
-
-  sideOption = ['H', 'H', 'S', 'Y']
 
   drop(event: CdkDragDrop<string[]>) {
-    console.log(event)
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
