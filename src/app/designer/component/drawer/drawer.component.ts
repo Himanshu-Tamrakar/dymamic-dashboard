@@ -31,7 +31,7 @@ export class DrawerComponent implements OnInit {
     id: '',
     name: 'Apple',
     fxFlex: "40%",
-    colStyle: [{ height: '40%' }],
+    colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
     component: {
       id: 'COM001',
       type: 'LINE-CHART',
@@ -41,7 +41,7 @@ export class DrawerComponent implements OnInit {
     id: '',
     name: 'Green Apple',
     fxFlex: "25%",
-    colStyle: [{ height: '40%' }],
+    colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
     component: {
       id: 'COM002',
       type: 'DATATABLE',
@@ -51,7 +51,7 @@ export class DrawerComponent implements OnInit {
     id: '',
     name: 'Banana',
     fxFlex: "25%",
-    colStyle: [{ height: '40%' }],
+    colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
     component: {
       id: 'COM002',
       type: 'DATATABLE',
@@ -61,7 +61,7 @@ export class DrawerComponent implements OnInit {
     id: '',
     name: 'Mango',
     fxFlex: "25%",
-    colStyle: [{ height: '40%' }],
+    colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
     component: {
       id: 'COM002',
       type: 'DATATABLE',
@@ -71,7 +71,7 @@ export class DrawerComponent implements OnInit {
     id: '',
     name: 'Papaya',
     fxFlex: "25%",
-    colStyle: [{ height: '40%' }],
+    colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
     component: {
       id: 'COM002',
       type: 'DATATABLE',
@@ -81,7 +81,7 @@ export class DrawerComponent implements OnInit {
     id: '',
     name: 'Graps',
     fxFlex: "25%",
-    colStyle: [{ height: '40%' }],
+    colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
     component: {
       id: 'COM002',
       type: 'DATATABLE',
@@ -91,7 +91,7 @@ export class DrawerComponent implements OnInit {
     id: '',
     name: 'Pineapple',
     fxFlex: "25%",
-    colStyle: [{ height: '40%' }],
+    colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
     component: {
       id: 'COM002',
       type: 'DATATABLE',

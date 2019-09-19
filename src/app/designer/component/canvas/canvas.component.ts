@@ -27,12 +27,12 @@ export class CanvasComponent implements OnInit {
       fxLayout:"row",
       fxLayoutGap:"0%",
       cdkDropListOrientation:"horizontal",
-      rowStyle: [{height: '40%'}],
+      rowStyle: {'background-color':'white', 'border': '1px dotted #ccc', 'height': '50vh'},
       columns: [{
         id: 'COL001',
         name: 'ROW001 - Col1',
         fxFlex:"10%",
-        colStyle: [{height: '40%'}],
+        colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
         component: {
           id: 'COM001',
           type: 'LINE-CHART',
@@ -42,7 +42,7 @@ export class CanvasComponent implements OnInit {
         id: 'COL002',
         name: 'ROW001 - Col2',
         fxFlex:"25%",
-        colStyle: [{height: '40%'}],
+        colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
         component: {
           id: 'COM002',
           type: 'DATATABLE',
@@ -54,12 +54,12 @@ export class CanvasComponent implements OnInit {
       fxLayout:"row",
       fxLayoutGap:"0%",
       cdkDropListOrientation:"horizontal",
-      rowStyle: [{height: '40%'}],
+      rowStyle: {'background-color':'white', 'border': '1px dotted #ccc', 'height': '50vh'},
       columns: [{
         id: 'COL001',
         name: 'ROW002 - Col1',
         fxFlex:"25%",
-        colStyle: [{height: '40%'}],
+        colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
         component: {
           id: 'COM001',
           type: 'LINE-CHART',
@@ -69,7 +69,7 @@ export class CanvasComponent implements OnInit {
         id: 'COL002',
         name: 'ROW002 - Col2',
         fxFlex:"25%",
-        colStyle: [{height: '40%'}],
+        colStyle: {'padding': '20px 10px',  'border': '1px solid #ccc', 'color': 'rgba(0, 0, 0, 0.87)', 'align-items': 'center', 'cursor': 'move', 'background': 'white', 'font-size': '14px'},
         component: {
           id: 'COM002',
           type: 'DATATABLE',
