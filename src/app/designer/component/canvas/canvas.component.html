@@ -2,7 +2,7 @@
 <!-- [ngStyle]="{'height': '100vh'}" -->
       <div cdkDropListGroup >
           <div [ngStyle]="row.rowStyle" *ngFor="let row of configJson.rows; let rowId=index" id="canvasRef{{rowId}}"  [fxLayout]="row.fxLayout" [fxLayoutGap]="row.fxLayoutGap" [cdkDropListOrientation]="row.cdkDropListOrientation" cdkDropList [cdkDropListData]="row.columns" class="example-list" (cdkDropListDropped)="drop($event)">
-            <div [ngStyle]="col.colStyle" (click)="itemSelected(rowId, colId)" [fxFlex]="col.fxFlex" class="example-box" *ngFor="let col of row.columns; let colId=index" cdkDrag>{{col.name}}</div>
+            <div [ngStyle]="col.colStyle" (click)="itemSelected(rowId, colId)" [fxFlex]="col.fxFlex" class="example-box" fxFlexOffset="25%" *ngFor="let col of row.columns; let colId=index" cdkDrag>{{col.name}}</div>
           </div>
 
 
